@@ -1,6 +1,7 @@
 //TODO: animations?
 //		is it clearer to organize key blocks and node boxes/cells?
 //		Resizing texts as boxes shrink
+//		Replica notice rather than check the value to verify the newest value (set_cur function)
 
 // to store the node names
 var nodes = [],
