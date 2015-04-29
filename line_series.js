@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<title>Line Series Testing</title>
-<body></body>
-<script src='http://d3js.org/d3.v3.min.js'></script>
-<script src='http://localhost:8000/conf.js'></script>
-<script>
-
 //TODO: more than one value for the backtrace functionality?
 //		continuation (deleting part of the field to continue moving)?
 //		obligatory animation but eh
@@ -422,5 +415,3 @@ var log_data = d3.csv(config.LINE_DATA_SRC, function(d, i) {
 		}
 	}, config.TIMEOUT);
 });
-
-</script>

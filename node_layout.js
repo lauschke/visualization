@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<title>Node Layout Testing</title>
-<body></body>
-<script src='http://d3js.org/d3.v3.min.js'></script>
-<script src='http://localhost:8000/conf.js'></script>
-<script>
-
 //TODO: animations?
 //		is it clearer to organize key blocks and node boxes/cells?
 
@@ -356,5 +349,3 @@ var log_data = d3.csv(config.RECT_DATA_SRC, function(d, i) {
 		}
 	}, config.TIMEOUT);
 });
-
-</script>
