@@ -1,5 +1,6 @@
 //TODO: animations?
 //		is it clearer to organize key blocks and node boxes/cells?
+//		Resizing texts as boxes shrink
 
 // to store the node names
 var nodes = [],
@@ -88,9 +89,9 @@ function draw_node_blocks() {
 				svg.append('rect')
 					.attr('width', c_w)
 					.attr('height', c_h)
-					.attr('x', c_w * c + 1)
+					.attr('x', c_w * c)
 					.attr('y', c_h * r + 1)
-					.attr('stroke', 'black')
+					.attr('stroke', 'navy')
 					.attr('stroke-width', 4)
 					.attr('fill', 'white');
 
@@ -255,15 +256,15 @@ function get_cell_color(key, n) {
 	if (key in n_store[n]) {
 		if (n_store[n][key] == k_store[key][cur]) {
 			// most current
-			color = 'lawngreen';
+			color = 'limegreen';
 		}
 		else if ((n_store[n][key] == k_store[key][prv]) && (n_store[n][key] != null)) {
 			// not most
-			color = 'yellow';
+			color = 'gold';
 		}
 		else if (n_store[n][key] != null) {
 			// blegh
-			color = 'red';
+			color = 'maroon';
 		}
 	}
 	return color;
@@ -321,7 +322,6 @@ function update(n, k, v) {
 		draw_key_cells_for_key(k);
 	}
 }
-
 
 // initialize svg element
 var svg = d3.select('body').append('svg')

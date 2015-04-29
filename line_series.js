@@ -125,17 +125,17 @@ function draw_request(r, k, t, v, s) {
 			if (v == store[k][prv][val]) {
 				// but the second most
 				// TODO: check p_x/y here as well? No timestamp integration at the moment
-				color = 'yellow';
+				color = 'gold';
 				draw_get_origin(r[client], s, store[k][prv][p_x], store[k][prv][p_y]);
 			}
 			else {
 				//or not at all
-				color = 'red';
+				color = 'maroon';
 			}
 		}
 		else {
 			// the most recent!
-			color = 'lawngreen';
+			color = 'limegreen';
 		}
 		// generate the response
 		rsp = k+'='+v;
